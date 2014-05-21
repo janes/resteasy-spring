@@ -1,11 +1,13 @@
-package org.resteasy;
+package org.resteasy.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.resteasy.model.Person;
+import org.springframework.stereotype.Service;
 
-public class SampleDAO {
+@Service
+public class SampleDAOImpl implements SampleDAO{
 	
 	public List<Person> getAllPersons(){
 		List<Person> list = new ArrayList<Person>();
